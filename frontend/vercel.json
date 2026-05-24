@@ -1,14 +1,5 @@
 {
-  "buildCommand": "npm run build",
-  "outputDirectory": "dist",
-  "framework": "angular",
   "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
-  ],
-  "env": {
-    "BACKEND_API_URL": "@backend_api_url"
-  }
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
 }

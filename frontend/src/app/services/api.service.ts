@@ -7,7 +7,7 @@ import { Injectable } from '@angular/core';
 export class ApiService {
   // Backend API URL - proxied through dev server
   // In production, update to full URL: 'http://your-domain.com/api'
-  private apiUrl = '/api';
+  private apiUrl = 'https://hallucinoo.onrender.com/';
 
   constructor() {}
 

@@ -8,14 +8,10 @@ To run the backend:
 3. Access API docs: http://localhost:8000/docs
 """
 
+import uvicorn
 from app.main import app
 
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run(
-        "app.main:app",
-        host="0.0.0.0",
-        port=8000,
-        reload=True,
-        log_level="info"
-    )
+if _name_ == "_main_":
+    import os, uvicorn
+    port = int(os.environ.get("PORT", 8000))
+    uvicorn.run("app.main:app", host="0.0.0.0", port=port, log_level="info")
